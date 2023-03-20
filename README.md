@@ -70,3 +70,10 @@ docker system prune -a
 restart docker
 sudo chmod 666 /var/run/docker.sock
 ```
+
+# Create cert with openssl rsa sha256
+### cd to directory that you want to put your cert files in
+```shell
+openssl rsa -in private.pem -pubout -out public.pem
+```
+
