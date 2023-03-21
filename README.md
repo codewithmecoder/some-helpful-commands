@@ -77,3 +77,8 @@ sudo chmod 666 /var/run/docker.sock
 openssl rsa -in private.pem -pubout -out public.pem
 ```
 
+# Connect MYSQL
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'allweb17';
+FLUSH PRIVILEGES;
+```
